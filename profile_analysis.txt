@@ -1,0 +1,128 @@
+Profiling analysis for: profile_output_r10_r1_6.prof
+
+Total function calls: 19460836
+Total time: 38.9470 seconds
+
+============================== Sorted by CUMULATIVE time (Top 50) ==============================
+Mon May 19 23:52:17 2025    profile_output_r10_r1_6.prof
+
+         19460836 function calls (19387442 primitive calls) in 38.947 seconds
+
+   Ordered by: cumulative time
+   List reduced from 6256 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    944/1    0.007    0.000   38.950   38.950 {built-in method builtins.exec}
+        1    0.000    0.000   38.950   38.950 main_operator_splitting_r10_r2.py:4(<module>)
+        1   14.779   14.779   37.659   37.659 main_operator_splitting_r10_r2.py:34(run_simulation_split)
+    60800    1.859    0.000    5.667    0.000 gas_phase.py:169(build_diffusion_coefficients_gas_Y)
+      415    0.013    0.000    4.800    0.012 interface.py:217(solve_interface_conditions)
+     3922    0.151    0.000    4.631    0.001 interface.py:108(_interface_energy_residual_full)
+   104342    1.171    0.000    4.216    0.000 properties.py:259(set_state)
+      415    0.003    0.000    3.143    0.008 _zeros_py.py:679(brentq)
+      415    0.006    0.000    3.137    0.008 {built-in method scipy.optimize._zeros._brentq}
+     2677    0.008    0.000    3.131    0.001 _zeros_py.py:93(f_raise)
+     2677    0.006    0.000    3.122    0.001 interface.py:212(_residual_wrapper_for_solver)
+   548549    0.401    0.000    2.546    0.000 fromnumeric.py:2400(any)
+   587055    0.702    0.000    2.377    0.000 fromnumeric.py:89(_wrapreduction_any_all)
+    64355    0.080    0.000    2.346    0.000 _polyint.py:59(__call__)
+    67230    1.610    0.000    2.307    0.000 numerics.py:65(solve_tridiagonal)
+     7722    0.216    0.000    2.267    0.000 properties.py:58(get_properties)
+      107    0.003    0.000    2.253    0.021 __init__.py:1(<module>)
+    63003    0.076    0.000    2.213    0.000 properties.py:417(get_density)
+    12024    1.412    0.000    2.166    0.000 properties.py:500(get_diffusion_coeffs)
+        1    0.002    0.002    1.894    1.894 plotting.py:19(plot_results)
+   694202    1.748    0.000    1.748    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    38463    0.088    0.000    1.617    0.000 numeric.py:2225(allclose)
+    64355    0.069    0.000    1.543    0.000 _interpolate.py:759(_evaluate)
+    64354    0.965    0.000    1.464    0.000 _interpolate.py:690(_call_linear)
+    64543    0.654    0.000    1.316    0.000 _type_check_impl.py:366(nan_to_num)
+  1122/20    0.005    0.000    1.305    0.065 <frozen importlib._bootstrap>:1002(_find_and_load)
+  1116/20    0.004    0.000    1.305    0.065 <frozen importlib._bootstrap>:967(_find_and_load_unlocked)
+  1067/21    0.004    0.000    1.302    0.062 <frozen importlib._bootstrap>:659(_load_unlocked)
+   884/21    0.003    0.000    1.301    0.062 <frozen importlib._bootstrap_external>:844(exec_module)
+  1549/22    0.001    0.000    1.299    0.059 <frozen importlib._bootstrap>:220(_call_with_frames_removed)
+    39409    0.683    0.000    1.284    0.000 numeric.py:2315(isclose)
+        6    0.000    0.000    1.120    0.187 pyplot.py:1223(savefig)
+        6    0.000    0.000    1.120    0.187 figure.py:3239(savefig)
+        6    0.000    0.000    1.120    0.187 backend_bases.py:2063(print_figure)
+        1    0.978    0.978    0.984    0.984 properties.py:161(__init__)
+     4753    0.375    0.000    0.944    0.000 interface.py:21(calculate_fuel_mass_fraction_surf)
+   205340    0.175    0.000    0.940    0.000 fromnumeric.py:51(_wrapfunc)
+65856/65154    0.049    0.000    0.940    0.000 <frozen importlib._bootstrap>:1033(_handle_fromlist)
+      380    0.102    0.000    0.935    0.002 gas_phase.py:16(calculate_gas_advection_rhs)
+  633/143    0.001    0.000    0.933    0.007 {built-in method builtins.__import__}
+   137374    0.130    0.000    0.846    0.000 fromnumeric.py:2178(clip)
+       12    0.000    0.000    0.810    0.067 backend_bases.py:2054(<lambda>)
+       12    0.000    0.000    0.810    0.067 backend_agg.py:449(print_png)
+       12    0.001    0.000    0.810    0.067 backend_agg.py:439(_print_pil)
+    74156    0.709    0.000    0.749    0.000 numerics.py:46(harmonic_mean)
+       12    0.000    0.000    0.655    0.055 artist.py:93(draw_wrapper)
+  1420/12    0.004    0.000    0.655    0.055 artist.py:54(draw_wrapper)
+       12    0.000    0.000    0.655    0.055 figure.py:3142(draw)
+    89675    0.117    0.000    0.653    0.000 fromnumeric.py:2255(sum)
+    24/12    0.000    0.000    0.650    0.054 image.py:114(_draw_list_compositing_images)
+
+
+
+============================== Sorted by TOTAL time (tottime) (Top 50) ==============================
+Mon May 19 23:52:17 2025    profile_output_r10_r1_6.prof
+
+         19460836 function calls (19387442 primitive calls) in 38.947 seconds
+
+   Ordered by: internal time
+   List reduced from 6256 to 50 due to restriction <50>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1   14.779   14.779   37.659   37.659 main_operator_splitting_r10_r2.py:34(run_simulation_split)
+    60800    1.859    0.000    5.667    0.000 gas_phase.py:169(build_diffusion_coefficients_gas_Y)
+   694202    1.748    0.000    1.748    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+    67230    1.610    0.000    2.307    0.000 numerics.py:65(solve_tridiagonal)
+    12024    1.412    0.000    2.166    0.000 properties.py:500(get_diffusion_coeffs)
+   104342    1.171    0.000    4.216    0.000 properties.py:259(set_state)
+        1    0.978    0.978    0.984    0.984 properties.py:161(__init__)
+    64354    0.965    0.000    1.464    0.000 _interpolate.py:690(_call_linear)
+    74156    0.709    0.000    0.749    0.000 numerics.py:46(harmonic_mean)
+   587055    0.702    0.000    2.377    0.000 fromnumeric.py:89(_wrapreduction_any_all)
+    39409    0.683    0.000    1.284    0.000 numeric.py:2315(isclose)
+    64543    0.654    0.000    1.316    0.000 _type_check_impl.py:366(nan_to_num)
+   201728    0.515    0.000    0.515    0.000 _methods.py:99(_clip)
+        9    0.433    0.048    0.433    0.048 {method 'encode' of 'ImagingEncoder' objects}
+   548549    0.401    0.000    2.546    0.000 fromnumeric.py:2400(any)
+     4753    0.375    0.000    0.944    0.000 interface.py:21(calculate_fuel_mass_fraction_surf)
+     3800    0.305    0.000    0.383    0.000 gas_phase.py:48(<listcomp>)
+   348867    0.266    0.000    0.266    0.000 {built-in method numpy.array}
+    64355    0.237    0.000    0.535    0.000 _util.py:275(_asarray_validated)
+     3800    0.233    0.000    0.310    0.000 gas_phase.py:61(<listcomp>)
+     7722    0.216    0.000    2.267    0.000 properties.py:58(get_properties)
+  176/174    0.211    0.001    0.215    0.001 {built-in method _imp.create_dynamic}
+   889367    0.211    0.000    0.214    0.000 {built-in method builtins.max}
+   587055    0.199    0.000    0.199    0.000 fromnumeric.py:91(<dictcomp>)
+    64543    0.186    0.000    0.186    0.000 _ufunclike_impl.py:71(isposinf)
+  1172453    0.175    0.000    0.175    0.000 {built-in method builtins.abs}
+   205340    0.175    0.000    0.940    0.000 fromnumeric.py:51(_wrapfunc)
+   115813    0.171    0.000    0.456    0.000 {method 'clip' of 'numpy.generic' objects}
+934178/933761    0.168    0.000    0.202    0.000 {built-in method builtins.isinstance}
+  1219800    0.156    0.000    0.156    0.000 numerics.py:12(interpolate_face_value)
+    98200    0.153    0.000    0.564    0.000 fromnumeric.py:69(_wrapreduction)
+     3922    0.151    0.000    4.631    0.001 interface.py:108(_interface_energy_residual_full)
+    64378    0.136    0.000    0.136    0.000 {method 'searchsorted' of 'numpy.ndarray' objects}
+   137374    0.130    0.000    0.846    0.000 fromnumeric.py:2178(clip)
+    64543    0.129    0.000    0.246    0.000 _type_check_impl.py:356(_getmaxmin)
+355277/355271    0.124    0.000    0.124    0.000 {built-in method numpy.asarray}
+    89675    0.117    0.000    0.653    0.000 fromnumeric.py:2255(sum)
+470255/470075    0.117    0.000    0.139    0.000 {built-in method builtins.getattr}
+    64543    0.114    0.000    0.114    0.000 _ufunclike_impl.py:140(isneginf)
+   271386    0.114    0.000    0.114    0.000 {built-in method numpy.zeros}
+   154186    0.112    0.000    0.112    0.000 {method 'copy' of 'numpy.ndarray' objects}
+   733964    0.103    0.000    0.103    0.000 {method 'items' of 'dict' objects}
+      380    0.102    0.000    0.935    0.002 gas_phase.py:16(calculate_gas_advection_rhs)
+      883    0.095    0.000    0.095    0.000 {built-in method marshal.loads}
+    38463    0.088    0.000    1.617    0.000 numeric.py:2225(allclose)
+    64355    0.080    0.000    2.346    0.000 _polyint.py:59(__call__)
+   780249    0.079    0.000    0.079    0.000 {method 'get' of 'dict' objects}
+      635    0.079    0.000    0.079    0.000 {method 'set_text' of 'matplotlib.ft2font.FT2Font' objects}
+   548549    0.078    0.000    0.078    0.000 fromnumeric.py:2395(_any_dispatcher)
+    63003    0.076    0.000    2.213    0.000 properties.py:417(get_density)
+
+

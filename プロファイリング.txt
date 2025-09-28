@@ -1,0 +1,3 @@
+python -m cProfile -o profile_output.prof main_operator_splitting_r4.py
+
+python check_profile.py > profile_analysis.txt
